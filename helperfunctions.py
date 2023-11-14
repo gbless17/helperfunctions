@@ -35,7 +35,7 @@ import numpy as np
 from sklearn.metrics import confusion_matrix
 
 # Our function needs a different name to sklearn's plot_confusion_matrix
-def make_confusion_matrix(y_true, y_pred, classes=None, figsize=(10, 10), text_size=15, norm=false, savefig=false): 
+def make_confusion_matrix(y_true, y_pred, classes=None, figsize=(10, 10), text_size=15, norm=False, savefig=False): 
   """Makes a labelled confusion matrix comparing predictions and ground truth labels.
 
   If classes is passed, confusion matrix will be labelled, if not, integer class values
@@ -47,8 +47,8 @@ def make_confusion_matrix(y_true, y_pred, classes=None, figsize=(10, 10), text_s
     classes: Array of class labels (e.g. string form). If `None`, integer labels are used.
     figsize: Size of output figure (default=(10, 10)).
     text_size: Size of output figure text (default=15).
-    norm: normalize values or not (default=false).
-    savefig: save confusion matrix to file (default=false).
+    norm: normalize values or not (default=False).
+    savefig: save confusion matrix to file (default=False).
   
   Returns:
     A labelled confusion matrix plot comparing y_true and y_pred.
@@ -130,7 +130,7 @@ def pred_and_plot(model, filename, class_names):
   # Plot the image and predicted class
   plt.imshow(img)
   plt.title(f"Prediction: {pred_class}")
-  plt.axis(false);
+  plt.axis(False);
   
 import datetime
 
